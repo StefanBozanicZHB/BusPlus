@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputFragment"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtStatus"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:text="TRENUTNO STANJE: 234 RSD" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="ISPLATA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:id="@+id/edtIsplata"
+                android:inputType="number"
+                android:hint="iznos [RSD]" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btnDataIsplata"
+                android:text="DATE" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#fff"
+                android:id="@+id/btnOkIsplata"
+                android:background="@drawable/button"
+                android:text="OK" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="UPLATA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:id="@+id/edtUplata"
+                android:inputType="number"
+                android:hint="iznos [RSD]" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/button"
+                android:textColor="#fff"
+                android:id="@+id/btnDataUplata"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="DATE" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/btnOkUplata"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                android:text="OK" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
